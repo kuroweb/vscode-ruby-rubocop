@@ -34,9 +34,9 @@ export class RubocopAutocorrectProvider
     } catch (e) {
       // if there are still some offences not fixed RuboCop will return status 1
       if (e.status !== 1) {
-        vscode.window.showWarningMessage(
-          'An error occurred during auto-correction'
-        );
+        // vscode.window.showWarningMessage(
+        //   'An error occurred during auto-correction'
+        // );
         console.log(e);
         return [];
       } else {
